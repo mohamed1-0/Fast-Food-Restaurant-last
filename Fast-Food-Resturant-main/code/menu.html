@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - FastFood Delight</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="nav-footer.css">
+    <link rel="stylesheet" href="menu.css">
+
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <h1>FastFood Delight</h1>
+        </div>
+        <div class="nav-links">
+            <a href="home.html" class="nav-item">Home</a>
+            <a href="menu.html" class="nav-item ">Menu</a>
+            <a href="contact.html" class="nav-item">Contact</a>
+            <a href="favorites.html" title="Favorites" class="nav-item"><i class="fas fa-heart"></i></a>
+            <a href="cart.html" title="Cart" class="nav-item"><i class="fas fa-shopping-bag"></i></a>
+
+            <div class="profile-dropdown">
+                <a href="#" class="nav-item profile-icon"><i class="fas fa-user"></i></a>
+                <div class="dropdown-content">
+                    <a href="login.html" class="dropdown-item">Login</a>
+                    <a href="signup.html" class="dropdown-item">Sign Up</a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Menu Header -->
+    <section class="menu-header">
+        <div class="container">
+            <h1>Our Delicious Menu</h1>
+            <p>Explore our wide selection of mouth-watering dishes</p>
+        </div>
+    </section>
+
+    <!-- Menu Items -->
+    <section class="menu-items">
+        <div class="container">
+            <div class="menu-grid">
+                <!-- Burger Item 1 -->
+                <div class="menu-item">
+                    <div class="item-image">
+                        <img src="../images/menu/classic-burger.png" alt="Classic Burger" loading="lazy">
+                        <div class="item-overlay">
+                            <button class="favorite-btn" data-id="1">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="item-details">
+                        <h3>Classic Burger</h3>
+                        <div class="item-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(4.5)</span>
+                        </div>
+                        <p class="item-ingredients">Beef patty, lettuce, tomato, onion, pickles, special sauce</p>
+                        <div class="item-footer">
+                            <span class="item-price">$8.99</span>
+                            <button class="add-to-cart-btn" data-id="1">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Burger Item 2 -->
+                <div class="menu-item">
+                    <div class="item-image">
+                        <img src="../images/menu/cheese-burger.png" alt="Cheese Burger" loading="lazy">
+                        <div class="item-overlay">
+                            <button class="favorite-btn" data-id="2">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="item-details">
+                        <h3>Cheese Burger</h3>
+                        <div class="item-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(5.0)</span>
+                        </div>
+                        <p class="item-ingredients">Beef patty, cheddar cheese, lettuce, tomato, onion, pickles, special
+                            sauce</p>
+                        <div class="item-footer">
+                            <span class="item-price">$9.99</span>
+                            <button class="add-to-cart-btn" data-id="2">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pizza Item 1 -->
+                <div class="menu-item">
+                    <div class="item-image">
+                        <img src="../images/menu/margherita-pizza.png" alt="Margherita Pizza" loading="lazy">
+                        <div class="item-overlay">
+                            <button class="favorite-btn" data-id="3">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="item-details">
+                        <h3>Margherita Pizza</h3>
+                        <div class="item-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(4.0)</span>
+                        </div>
+                        <p class="item-ingredients">Tomato sauce, mozzarella cheese, fresh basil, olive oil</p>
+                        <div class="item-footer">
+                            <span class="item-price">$12.99</span>
+                            <button class="add-to-cart-btn" data-id="3">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pizza Item 2 -->
+                <div class="menu-item">
+                    <div class="item-image">
+                        <img src="../images/menu/pepperoni-pizza.png" alt="Pepperoni Pizza" loading="lazy">
+                        <div class="item-overlay">
+                            <button class="favorite-btn" data-id="4">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="item-details">
+                        <h3>Pepperoni Pizza</h3>
+                        <div class="item-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(4.5)</span>
+                        </div>
+                        <p class="item-ingredients">Tomato sauce, mozzarella cheese, pepperoni, oregano</p>
+                        <div class="item-footer">
+                            <span class="item-price">$14.99</span>
+                            <button class="add-to-cart-btn" data-id="4">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sandwich Item 1 -->
+                <div class="menu-item">
+                    <div class="item-image">
+                        <img src="../images/menu/club-sandwich.png" alt="Club Sandwich" loading="lazy">
+                        <div class="item-overlay">
+                            <button class="favorite-btn" data-id="5">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="item-details">
+                        <h3>Club Sandwich</h3>
+                        <div class="item-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(4.0)</span>
+                        </div>
+                        <p class="item-ingredients">Turkey, bacon, lettuce, tomato, mayonnaise, triple-decker bread</p>
+                        <div class="item-footer">
+                            <span class="item-price">$10.99</span>
+                            <button class="add-to-cart-btn" data-id="5">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sandwich Item 2 -->
+                <div class="menu-item">
+                    <div class="item-image">
+                        <img src="../images/menu/blt-sandwich.png" alt="BLT Sandwich" loading="lazy">
+                        <div class="item-overlay">
+                            <button class="favorite-btn" data-id="6">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="item-details">
+                        <h3>BLT Sandwich</h3>
+                        <div class="item-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(4.5)</span>
+                        </div>
+                        <p class="item-ingredients">Bacon, lettuce, tomato, mayonnaise, toasted bread</p>
+                        <div class="item-footer">
+                            <span class="item-price">$9.99</span>
+                            <button class="add-to-cart-btn" data-id="6">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Side Item 1 -->
+                <div class="menu-item">
+                    <div class="item-image">
+                        <img src="../images/menu/french-fries.png" alt="French Fries" loading="lazy">
+                        <div class="item-overlay">
+                            <button class="favorite-btn" data-id="7">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="item-details">
+                        <h3>French Fries</h3>
+                        <div class="item-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(5.0)</span>
+                        </div>
+                        <p class="item-ingredients">Crispy golden fries, seasoned with salt, served with ketchup</p>
+                        <div class="item-footer">
+                            <span class="item-price">$4.99</span>
+                            <button class="add-to-cart-btn" data-id="7">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Side Item 2 -->
+                <div class="menu-item">
+                    <div class="item-image">
+                        <img src="../images/menu/onion-rings.png" alt="Onion Rings" loading="lazy">
+                        <div class="item-overlay">
+                            <button class="favorite-btn" data-id="8">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="item-details">
+                        <h3>Onion Rings</h3>
+                        <div class="item-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(4.0)</span>
+                        </div>
+                        <p class="item-ingredients">Crispy battered onion rings, served with ranch dressing</p>
+                        <div class="item-footer">
+                            <span class="item-price">$5.99</span>
+                            <button class="add-to-cart-btn" data-id="8">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Drink Item 1 -->
+                <div class="menu-item">
+                    <div class="item-image">
+                        <img src="../images/menu/soft-drink.png" alt="Soft Drink" loading="lazy">
+                        <div class="item-overlay">
+                            <button class="favorite-btn" data-id="9">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="item-details">
+                        <h3>Soft Drink</h3>
+                        <div class="item-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(4.0)</span>
+                        </div>
+                        <p class="item-ingredients">Choice of Coca-Cola, Sprite, Fanta, or Dr. Pepper</p>
+                        <div class="item-footer">
+                            <span class="item-price">$2.99</span>
+                            <button class="add-to-cart-btn" data-id="9">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Drink Item 2 -->
+                <div class="menu-item">
+                    <div class="item-image">
+                        <img src="../images/menu/milkshake.png" alt="Milkshake" loading="lazy">
+                        <div class="item-overlay">
+                            <button class="favorite-btn" data-id="10">
+                                <i class="far fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="item-details">
+                        <h3>Milkshake</h3>
+                        <div class="item-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(4.5)</span>
+                        </div>
+                        <p class="item-ingredients">Choice of chocolate, vanilla, strawberry, or cookies & cream</p>
+                        <div class="item-footer">
+                            <span class="item-price">$5.99</span>
+                            <button class="add-to-cart-btn" data-id="10">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+                <p><i class="fas fa-envelope"></i> info@fastfooddelight.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Food Street, Cuisine City</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 FastFood Delight. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="menu.js"></script>
+</body>
+
+</html>

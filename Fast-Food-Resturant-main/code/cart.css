@@ -1,0 +1,244 @@
+        /* Cart Page Styles */
+.cart-section {
+    padding: 2rem 0;
+    min-height: calc(100vh - 200px);
+    background-color: #f8f9fa;
+}
+
+.cart-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+.cart-header h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.cart-header p {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+.cart-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.cart-table-container {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+    margin-bottom: 2rem;
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart-table th {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+    color: #333;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.cart-table td {
+    padding: 1rem;
+    vertical-align: middle;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.cart-table tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+.cart-table img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.cart-table .product-name {
+    font-weight: 600;
+    color: #333;
+}
+
+.cart-table .ingredients {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.cart-table .amount-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cart-table .amount-btn {
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.cart-table .amount-btn:hover {
+    background: #e9ecef;
+}
+
+.cart-table .amount-input {
+    width: 40px;
+    text-align: center;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 0.3rem;
+}
+
+.cart-table .price {
+    font-weight: 600;
+    color: #2ecc71;
+}
+
+.cart-table .remove-btn {
+    background: #ff4757;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cart-table .remove-btn:hover {
+    background: #ff6b81;
+}
+
+.cart-table .total-price {
+    text-align: right;
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+.cart-table .total-price span {
+    color: #2ecc71;
+    font-weight: 700;
+}
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.cart-header {
+    text-align: center;
+    margin-bottom: 70px;
+    /* padding-bottom: 15px; */
+    /* border-bottom: 1px solid #eee; */
+}
+
+.cart-header h1 {
+    font-size: 35px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.cart-header p {
+    color: #7f8c8d;
+    font-size: 16px;
+}
+
+.empty-cart {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.178);
+    margin-bottom: 30px;
+}
+.empty-cart i{
+    font-size: 100px;
+    color: #7f8c8d;
+}
+
+.empty-cart h2 {
+    font-size: 50px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.empty-cart p {
+    color: #7f8c8d;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.menu-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.menu-section a{
+    text-decoration: none;
+    background: #2ecc71;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+
+.checkout-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.btn {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-primary   {
+    background: #2ecc71;
+    color: white;
+    text-decoration: none;
+}
+
+.menu-section button:hover,
+.btn-primary:hover {
+        background: #27ae60;
+}
+
+
+
+.btn-secondary {
+    background-color: #95a5a6;
+    color: white;
+    text-decoration: none;
+}
+
+.btn-secondary:hover {
+    background: #7f8c8d;
+}

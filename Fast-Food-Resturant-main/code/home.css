@@ -1,0 +1,266 @@
+/* ========== Variables ========== */
+:root {
+  --primary-color: rgba(253, 79, 79);
+  --text-dark: #000000d4;
+  --text-light: #0b0b0b79;
+  --white: #ffffff;
+  --gray-light: rgb(215, 215, 215);
+  --gray-dark: rgb(200, 200, 200);
+  --shadow-sm: 0 3px 6px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 8px 12px rgba(0, 0, 0, 0.5);
+  --transition: all 0.3s linear;
+}
+
+/* ========== Reset & Base Styles ========== */
+html, body {
+  scroll-behavior: smooth;
+  background-color: #eeeeee;
+  font-family: "Merienda", cursive;
+  text-transform: capitalize;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: var(--transition);
+}
+
+/* ========== Button Styles ========== */
+.btn {
+  font-size: 1.5rem;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border-radius: 5rem;
+  font-weight: 600;
+  padding: 1.2rem 3rem;
+  letter-spacing: 1px;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  transition: width 0.3s ease;
+  z-index: -1;
+}
+
+.btn:hover::before {
+  width: 100%;
+}
+
+.btn:hover {
+  text-shadow: 0 0 10px var(--white);
+  border: 0.2rem solid var(--gray-light);
+  outline: 0.2rem solid rgba(200, 200, 200, 0.8);
+  outline-offset: 0.2rem;
+  transform: scale(1.05);
+}
+
+/* ========== Hero Section ========== */
+.hero-content {
+  background: linear-gradient(rgba(0, 0, 0, 0.5)), url(../images/home.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 100vh;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  align-content: space-evenly;
+  margin-bottom: 10rem;
+  animation: fadeInUp 1.5s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  color: var(--white);
+  padding-top: 2rem;
+  transform: translateY(4rem);
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+  letter-spacing: -2px;
+  animation: slideInDown 1s ease-out 0.5s both;
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  color: var(--gray-dark);
+  transform: translateY(0rem);
+  animation: slideInDown 1s ease-out 0.5s both;
+}
+
+/* ========== About Section  ========== */
+.about-us h2,
+.about-our-history h2,
+.features h2,
+.reviews h2 {
+  font-size: 3rem;
+  color: var(--text-dark);
+  text-align: center;
+}
+
+.about-us h2::after,
+.about-our-history h2::after,
+.features h2::after,
+.reviews h2::after {
+  content: "";
+  display: block;
+  width: 8%;
+  height: 0.4rem;
+  background-color: var(--primary-color);
+  margin: auto;
+  margin-top: 0.8rem;
+  border-radius: 0.4rem;
+}
+
+section .content {
+  font-size: 1.25rem;
+  color: rgba(31, 31, 31, 0.748);
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  background: var(--white);
+  border: 1.5rem solid var(--white);
+  border-radius: 1.2rem;
+  padding: 1.5rem 0.8rem;
+  margin: 6rem auto;
+  width: 70%;
+}
+
+section .content:hover {
+  box-shadow: var(--shadow-md);
+  transform: scale(1.03);
+}
+
+/* ========== Features Section ========== */
+.features i {
+  color: var(--primary-color);
+  font-size: 2.5rem;
+}
+
+.feature-box:hover i {
+  transform: scale(1.2) rotate(360deg);
+}
+
+.features-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.feature-box {
+  margin: 7rem 3rem;
+  padding: 2rem 1rem;
+  background: var(--white);
+  border: 0.2rem solid var(--white);
+  border-radius: 1rem;
+  width: calc(100% / 3);
+  height: 16rem;
+}
+
+.feature-box:hover {
+  box-shadow: var(--shadow-md);
+  transform: scale(1.03);
+}
+
+.features .features-content h3 {
+  font-size: 1.5rem;
+  color: var(--text-dark);
+  margin: 1.5rem 0;
+}
+
+.features .features-content p {
+  font-size: 1rem;
+  color: var(--text-light);
+}
+
+/* ========== Reviews Section ========== */
+.reviews h2 {
+  margin-bottom: 6rem;
+}
+
+.reviews-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 2rem;
+  margin: 1.5rem 2rem;
+}
+
+.review-box {
+  background: var(--white);
+  border-radius: 0.5rem;
+  padding: 2rem 0.8rem;
+  margin: 2rem 1rem;
+  border: 0.3rem solid var(--gray-light);
+  outline: 0.3rem solid rgba(215, 215, 215, 0.8);
+  outline-offset: 0.2rem;
+  width: calc(100% / 4);
+}
+
+.review-box:hover {
+  box-shadow: var(--shadow-md);
+  transform: scale(1.03);
+}
+
+.reviews-content img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.reviews .reviews-content h4 {
+  font-size: 1.2rem;
+  color: #050047;
+  margin: 0.8rem 0;
+}
+
+.reviews p {
+  font-size: 0.8rem;
+  color: var(--text-light);
+  padding: 0.5rem 0;
+}
+
+.rating {
+  color: orange;
+  font-size: 1.1rem;
+  padding: 0.2rem 0;
+}
+
+.rating i:hover {
+  transform: scale(1.2) rotate(360deg);
+}
